@@ -1,0 +1,96 @@
+{
+	"info": {
+		"_postman_id": "8ad284c3-37ce-40e2-8275-bce349ba8cef",
+		"name": "Image manipulation",
+		"description": "This Collection contain 3 requests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login post  request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "127.0.0.1:3000/api/v1/users/login",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"login"
+					]
+				},
+				"description": "127.0.0.1:3000/api/v1/users/login"
+			},
+			"response": []
+		},
+		{
+			"name": "Image Upload url",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:3000/api/v1/users/images",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"images"
+					]
+				},
+				"description": "127.0.0.1:3000/api/v1/users/images"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Images of user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:3000/api/v1/users/?source=1",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"users",
+						""
+					],
+					"query": [
+						{
+							"key": "source",
+							"value": "1"
+						}
+					]
+				},
+				"description": "Get Images related to specific user request"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
