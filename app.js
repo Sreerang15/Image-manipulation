@@ -1,6 +1,6 @@
 const express = require("express");
 const userRouter = require("./routes/userRoutes");
-const cookieParser = require('cookie-parser');
+const cookieParser = require("cookie-parser");
 
 //EXPRESS CONFIGURATION
 const app = express();
@@ -11,5 +11,5 @@ app.use(cookieParser());
 
 app.use("/api/v1/users", userRouter);
 
-
+//added
 module.exports = app;
